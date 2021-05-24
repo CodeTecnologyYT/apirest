@@ -1,0 +1,1 @@
+DROP NIM_USER;

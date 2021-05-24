@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Empresa: NISUM
+    Ruta del log: ./logging
+    Hecho por: Anthony M. Rosas Quispe.
+-->
+
+<Configuration>
+
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout
+                    disableAnsi="false"
+                    pattern="%style{%d{ISO8601}}{magenta} %highlight{%-5level }[%style{%t}{bright,blue}] %style{%C{1.}}{bright,yellow}: %msg%n%throwable"/>
+        </Console>
+        <RollingFile
+                name="LogNIZUMApiRest"
+                fileName="./logging/NiZUM/apirest.log"
+                filePattern="./logging/${date:yyyy-MM}/NISUM-%d{MM-dd-yyyy}-%i.log.gz" >
+            <PatternLayout>
+                <Pattern>%d{ISO8601} %p %c{1.} [%t]: %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <OnStartupTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <!-- Evitar duplicados additivity = false -->
+        <!-- Log a nivel de Consola -->
+        <Root level="info">
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="LogNIZUMApiRest"/>
+        </Root>
+    </Loggers>
+</Configuration>
