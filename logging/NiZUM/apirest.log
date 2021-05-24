@@ -1,34 +1,30 @@
-2021-05-24T11:23:20,304 INFO o.h.v.i.u.Version [background-preinit]: HV000001: Hibernate Validator 6.2.0.Final
-2021-05-24T11:23:20,330 INFO c.n.a.ApirestApplication [restartedMain]: Starting ApirestApplication using Java 1.8.0_281 on LAPTOP-SJ42IUVC with PID 22032 (D:\Proyecto-R\Personales\Practice\apirest\build\classes\java\main started by bryan in D:\Proyecto-R\Personales\Practice\apirest)
-2021-05-24T11:23:20,333 INFO c.n.a.ApirestApplication [restartedMain]: The following profiles are active: dev
-2021-05-24T11:23:20,387 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-24T11:23:20,387 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-24T11:23:20,590 WARN o.s.h.c.j.Jackson2ObjectMapperBuilder [background-preinit]: For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2021-05-24T11:23:20,947 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain]: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-05-24T11:23:20,994 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain]: Finished Spring Data repository scanning in 40 ms. Found 3 JPA repository interfaces.
-2021-05-24T11:23:21,464 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain]: Tomcat initialized with port(s): 8081 (http)
-2021-05-24T11:23:21,470 INFO o.a.c.h.Http11NioProtocol [restartedMain]: Initializing ProtocolHandler ["http-nio-8081"]
-2021-05-24T11:23:21,471 INFO o.a.c.c.StandardService [restartedMain]: Starting service [Tomcat]
-2021-05-24T11:23:21,471 INFO o.a.c.c.StandardEngine [restartedMain]: Starting Servlet engine: [Apache Tomcat/9.0.46]
-2021-05-24T11:23:21,533 INFO o.a.c.c.C.[.[.[/] [restartedMain]: Initializing Spring embedded WebApplicationContext
-2021-05-24T11:23:21,534 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain]: Root WebApplicationContext: initialization completed in 1145 ms
-2021-05-24T11:23:21,554 INFO c.z.h.HikariDataSource [restartedMain]: HikariPool-1 - Starting...
-2021-05-24T11:23:21,658 INFO c.z.h.HikariDataSource [restartedMain]: HikariPool-1 - Start completed.
-2021-05-24T11:23:21,663 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain]: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/testdb'
-2021-05-24T11:23:21,748 INFO o.h.j.i.u.LogHelper [restartedMain]: HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-05-24T11:23:21,788 INFO o.h.Version [restartedMain]: HHH000412: Hibernate ORM core version 5.4.31.Final
-2021-05-24T11:23:21,891 INFO o.h.a.c.Version [restartedMain]: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-05-24T11:23:21,986 INFO o.h.d.Dialect [restartedMain]: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2021-05-24T11:23:22,485 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain]: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-05-24T11:23:22,494 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain]: Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-05-24T11:23:23,365 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain]: Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38b7eee, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b8b3087, org.springframework.security.web.header.HeaderWriterFilter@22c8b02f, org.springframework.web.filter.CorsFilter@65be10b5, org.springframework.security.web.authentication.logout.LogoutFilter@51a2b09d, com.nizum.apirest.security.JWTAuthenticationFilter@757fe8b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d4a0182, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2aa2da48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b9ee4d5, org.springframework.security.web.session.SessionManagementFilter@35e31733, org.springframework.security.web.access.ExceptionTranslationFilter@268b24ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@530004d3]
-2021-05-24T11:23:23,554 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain]: LiveReload server is running on port 35729
-2021-05-24T11:23:23,569 INFO o.a.c.h.Http11NioProtocol [restartedMain]: Starting ProtocolHandler ["http-nio-8081"]
-2021-05-24T11:23:23,584 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain]: Tomcat started on port(s): 8081 (http) with context path ''
-2021-05-24T11:23:23,593 INFO c.n.a.ApirestApplication [restartedMain]: Started ApirestApplication in 3.53 seconds (JVM running for 4.518)
-2021-05-24T11:23:23,594 INFO o.s.b.a.ApplicationAvailabilityBean [restartedMain]: Application availability state LivenessState changed to CORRECT
-2021-05-24T11:23:23,597 INFO o.s.b.a.ApplicationAvailabilityBean [restartedMain]: Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2021-05-24T11:23:30,169 INFO o.a.c.c.C.[.[.[/] [http-nio-8081-exec-1]: Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-24T11:23:30,169 INFO o.s.w.s.DispatcherServlet [http-nio-8081-exec-1]: Initializing Servlet 'dispatcherServlet'
-2021-05-24T11:23:30,171 INFO o.s.w.s.DispatcherServlet [http-nio-8081-exec-1]: Completed initialization in 1 ms
-2021-05-24T11:23:30,198 WARN c.n.a.s.JWTAuthenticationFilter [http-nio-8081-exec-1]: No existe un token en los headers
+2021-05-24T11:40:39,841 INFO o.h.v.i.u.Version [background-preinit]: HV000001: Hibernate Validator 6.2.0.Final
+2021-05-24T11:40:39,863 INFO c.n.a.ApirestApplication [restartedMain]: Starting ApirestApplication using Java 1.8.0_281 on LAPTOP-SJ42IUVC with PID 13024 (D:\Proyecto-R\Personales\Practice\apirest\build\classes\java\main started by bryan in D:\Proyecto-R\Personales\Practice\apirest)
+2021-05-24T11:40:39,866 INFO c.n.a.ApirestApplication [restartedMain]: The following profiles are active: dev
+2021-05-24T11:40:39,915 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-24T11:40:39,915 INFO o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [restartedMain]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-24T11:40:40,069 WARN o.s.h.c.j.Jackson2ObjectMapperBuilder [background-preinit]: For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-05-24T11:40:40,391 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain]: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-24T11:40:40,430 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain]: Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2021-05-24T11:40:40,832 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain]: Tomcat initialized with port(s): 8081 (http)
+2021-05-24T11:40:40,837 INFO o.a.c.h.Http11NioProtocol [restartedMain]: Initializing ProtocolHandler ["http-nio-8081"]
+2021-05-24T11:40:40,838 INFO o.a.c.c.StandardService [restartedMain]: Starting service [Tomcat]
+2021-05-24T11:40:40,838 INFO o.a.c.c.StandardEngine [restartedMain]: Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-24T11:40:40,894 INFO o.a.c.c.C.[.[.[/] [restartedMain]: Initializing Spring embedded WebApplicationContext
+2021-05-24T11:40:40,894 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain]: Root WebApplicationContext: initialization completed in 977 ms
+2021-05-24T11:40:40,915 INFO c.z.h.HikariDataSource [restartedMain]: HikariPool-1 - Starting...
+2021-05-24T11:40:41,002 INFO c.z.h.HikariDataSource [restartedMain]: HikariPool-1 - Start completed.
+2021-05-24T11:40:41,006 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain]: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/testdb'
+2021-05-24T11:40:41,073 INFO o.h.j.i.u.LogHelper [restartedMain]: HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-24T11:40:41,103 INFO o.h.Version [restartedMain]: HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-24T11:40:41,186 INFO o.h.a.c.Version [restartedMain]: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-24T11:40:41,254 INFO o.h.d.Dialect [restartedMain]: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-05-24T11:40:41,643 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain]: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-24T11:40:41,650 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain]: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-24T11:40:42,346 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain]: Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64db10de, org.springframework.security.web.context.SecurityContextPersistenceFilter@346426ba, org.springframework.security.web.header.HeaderWriterFilter@54ba97ac, org.springframework.web.filter.CorsFilter@45e26c02, org.springframework.security.web.authentication.logout.LogoutFilter@70d5a292, com.nizum.apirest.security.JWTAuthenticationFilter@20ea92db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@642ca67c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9cf4583, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44e2f18b, org.springframework.security.web.session.SessionManagementFilter@7a18276, org.springframework.security.web.access.ExceptionTranslationFilter@1259a211, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57a42554]
+2021-05-24T11:40:42,500 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain]: LiveReload server is running on port 35729
+2021-05-24T11:40:42,512 INFO o.a.c.h.Http11NioProtocol [restartedMain]: Starting ProtocolHandler ["http-nio-8081"]
+2021-05-24T11:40:42,524 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain]: Tomcat started on port(s): 8081 (http) with context path ''
+2021-05-24T11:40:42,532 INFO c.n.a.ApirestApplication [restartedMain]: Started ApirestApplication in 2.89 seconds (JVM running for 3.71)
+2021-05-24T11:40:42,533 INFO o.s.b.a.ApplicationAvailabilityBean [restartedMain]: Application availability state LivenessState changed to CORRECT
+2021-05-24T11:40:42,534 INFO o.s.b.a.ApplicationAvailabilityBean [restartedMain]: Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
