@@ -38,6 +38,7 @@ public class UserService {
 
     public UserResponse createUser(UserRequest userRequest) {
         Integer userState;
+        String passworEncode;
         String tokenGenerated;
         Optional<UserEntity> userEntity;
         RolEntity userRolFound;
@@ -56,9 +57,8 @@ public class UserService {
         setRolInsert = new HashSet<>();
         setRolInsert.add(userRolFound);
 
-        String passwordOld = userRequest.getPassword();
-        String password = passwordEncoder.encode(userRequest.getPassword());
-        userRequest.setPassword(password);
+        passworEncode = passwordEncoder.encode(userRequest.getPassword());
+        userRequest.setPassword(passworEncode);
         userEntityCreated = UserRequest.getConvertionUserEntity(userRequest);
         userEntityCreated.setRoles(setRolInsert);
         userRepository.save(userEntityCreated);
