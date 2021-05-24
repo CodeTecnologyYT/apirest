@@ -6,7 +6,9 @@ import com.nizum.apirest.model.entities.UserEntity;
 import com.sun.istack.NotNull;
 import lombok.*;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotEmpty;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
@@ -21,11 +23,12 @@ public class UserRequest{
 
     @NotBlank(message = "El nombre no puede estar vacío")
     private String name;
-    @NotNull
+    @NotBlank(message = "El email no puede estar vacío")
+    @Email(regexp = "^[a-zA-Z0-9_!#$%&’*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z0-9-]{2,}$", message = "El correo no tiene el formato correcto")
     private String email;
-    @NotNull
+    @NotBlank(message = "El password no puede estar vacío")
     private String password;
-    @NotNull
+    @NotEmpty(message = "El phones no puede estar vacío")
     private List<PhoneRequest> phones;
 
 

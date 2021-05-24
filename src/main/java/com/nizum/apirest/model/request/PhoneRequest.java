@@ -4,6 +4,7 @@ import com.nizum.apirest.model.entities.PhoneEntity;
 import com.sun.istack.NotNull;
 import lombok.*;
 
+import javax.validation.constraints.NotBlank;
 import java.util.UUID;
 
 @Getter
@@ -13,11 +14,11 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 public class PhoneRequest {
-    @NotNull
+    @NotBlank(message = "El number no puede estar vacío")
     private String number;
-    @NotNull
+    @NotBlank(message = "El citycode no puede estar vacío")
     private String citycode;
-    @NotNull
+    @NotBlank(message = "El contrycode no puede estar vacío")
     private String contrycode;
 
     public static PhoneEntity getConvertionPhoneEntity(PhoneRequest phone){
